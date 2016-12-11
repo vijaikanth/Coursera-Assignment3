@@ -31,7 +31,7 @@ function MenuSearchService($http) {
   service.getMatchedMenuItems = function (shortName) {
     var foundItems = $http({
       method: "GET",
-      url: ("http://davids-restaurant.herokuapp.com" + "/menu_items.json"),
+      url: ("https://davids-restaurant.herokuapp.com" + "/menu_items.json"),
       params: {
         category: shortName
       }
