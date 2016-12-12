@@ -1,6 +1,12 @@
+<br/>
+<h3 ng-if="list.errorMessage.length > 0">{{list.errorMessage}}</h3>
+<br/>
 <ol>
-  <li ng-repeat="item in list.items.menu_items">
-    {{ item.name }}
-    <button ng-click="list.onRemove({index: $index});">Remove Item</button>
+  <br/>
+  <li ng-repeat="item in list.itemList">
+    {{item.short_name}}
+    {{item.name}}
+    {{item.description}}
+    <button ng-click="list.onRemove({index: $index});">Don't Want This One!</button>
   </li>
 </ol>
